@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill my first form below</p>
+  <div id="form">
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Full Name:<input type="text" id="name" name="name" required placeholder="Enter Your Name"/>
+        </label>
+        <label id="email-label" for="email">Email:<input type="email" id="email" name="email" required placeholder="Enter Your Email"/>
+        </label>
+        <label id="number-label" for="number">Age(Optional):<input type="number" id="number" name="Phone Number" min="13" max="80" placeholder="Age"/>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">Favorite Hobby:
+          <select id="dropdown">
+            <option value="">(Select One)</option>
+            <option value="1">Reading</option>
+            <option value="2">Video Games</option>
+            <option value="3">Athletics</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Weather Preference</legend>
+        <label for="warm">
+          <input class="inline" type="radio" id="warm" name="weather" value="warm" checked>Warm Weather</input>
+        </label>
+        <label for="cold">
+          <input class="inline" type="radio" id="cold" name="weather" value="cold">Cold Weather</input>
+        </label>
+        <label for="none">
+          <input class="inline" type="radio" id="none" name="weather" value="none">No Preference</input>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>What Are Your Favorite Academic Topics?</legend>
+        <label for="math">
+          <input type="checkbox" class="inline" value="math" id="math" name="topic">Mathematics</input>
+        </label>
+        <label for="english">
+          <input type="checkbox" class="inline" value="english" id="english" name="topic">English</input>
+        </label>
+        <label for="science">
+          <input type="checkbox" class="inline" value="science" id="science" name="topic">Science</input>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="comments">Anything You'd Like Me To Know?:
+          <textarea placeholder="Comments" id="comments"rows="3" cols="30"></textarea>
+        </label>
+        <input type="submit" id="submit" value="Submit">
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>
